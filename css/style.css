@@ -174,24 +174,38 @@ body {
   padding: 0 20px;
 }
 
+header.container {
+  margin: 20px 0;
+}
+
 header {
   width: 100%;
   height: 100%;
-  margin: 0 auto 20px;
-  padding: 20px;
-  max-height: clamp(180px * var(--coefficient), 180 * 100vw / var(--design-width) * var(--mobile-coefficient), 180px * var(--mobile-coefficient));
+  margin: 0;
+  padding: 0;
+  max-height: clamp(120px * var(--coefficient), 120 * 100vw / var(--design-width) * var(--mobile-coefficient), 120px * var(--mobile-coefficient));
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  font-size: clamp(24px * var(--coefficient), 24 * 100vw / var(--design-width) * var(--mobile-coefficient), 24px * var(--mobile-coefficient));
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  position: sticky;
 }
 
 header img {
-  object-fit: contain;
-  width: 80px;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+header p {
+  font-size: clamp(26px * var(--coefficient), 26 * 100vw / var(--design-width) * var(--mobile-coefficient), 26px * var(--mobile-coefficient));
+  line-height: 16px;
 }
 
 .intro {
@@ -252,7 +266,6 @@ header img {
 }
 
 .projects ul li h2 {
-  text-decoration: underline;
   font-size: clamp(34px * var(--coefficient), 34 * 100vw / var(--design-width) * var(--mobile-coefficient), 34px * var(--mobile-coefficient));
   line-height: 26px;
   min-height: 60px;
@@ -262,6 +275,7 @@ header img {
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .projects__preview {
@@ -279,6 +293,14 @@ header img {
   object-fit: cover;
 }
 
+.projects__preview {
+  transition: all 0.4s ease-in-out;
+}
+
+.projects__preview:hover {
+  opacity: 0.4;
+}
+
 footer p {
   padding: 0 0 64px;
   font-size: clamp(18px * var(--coefficient), 18 * 100vw / var(--design-width) * var(--mobile-coefficient), 18px * var(--mobile-coefficient));
@@ -294,9 +316,10 @@ footer p {
 }
 
 @media screen and (max-width: 640px) {
-  header {
-    font-size: clamp(14px * var(--coefficient), 14 * 100vw / var(--design-width) * var(--mobile-coefficient), 14px * var(--mobile-coefficient));
+  header p {
+    font-size: clamp(13px * var(--coefficient), 13 * 100vw / var(--design-width) * var(--mobile-coefficient), 13px * var(--mobile-coefficient));
     text-align: right;
+    line-height: 22px;
   }
 
   .main .intro {
@@ -311,7 +334,7 @@ footer p {
 
   .projects ul {
     grid-template-columns: repeat(1, 1fr);
-    gap: 140px;
+    gap: 80px;
   }
 
   .projects ul li {
@@ -322,4 +345,4 @@ footer p {
     font-size: clamp(24px * var(--coefficient), 24 * 100vw / var(--design-width) * var(--mobile-coefficient), 24px * var(--mobile-coefficient));
     line-height: 45px;
   }
-}RL=style.css.map */
+}
