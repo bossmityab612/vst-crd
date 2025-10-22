@@ -301,6 +301,32 @@ header p {
   opacity: 0.4;
 }
 
+.description div {
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  background-color: #589bac;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.description span {
+  color: #1f1f1f;
+  font-size: clamp(40px * var(--coefficient), 40 * 100vw / var(--design-width) * var(--mobile-coefficient), 40px * var(--mobile-coefficient));
+  display: block;
+}
+
+.description span:nth-child(even) {
+  color: rgb(218, 218, 218);
+  padding-left: 10%;
+}
+
 footer p {
   padding: 0 0 64px;
   font-size: clamp(18px * var(--coefficient), 18 * 100vw / var(--design-width) * var(--mobile-coefficient), 18px * var(--mobile-coefficient));
