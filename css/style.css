@@ -367,6 +367,6 @@ footer p {
   }
 
   .description span {
-    font-size: clamp(24px * var(--coefficient), 24 * 100vw / var(--design-width) * var(--mobile-coefficient), 24px * var(--mobile-coefficient));
+    font-size: clamp(16px * var(--coefficient), 16 * 100vw / var(--design-width) * var(--mobile-coefficient), 16px * var(--mobile-coefficient));
   }
 }
