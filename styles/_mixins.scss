@@ -190,8 +190,12 @@
   min-height: adaptive($val);
 }
 
-@mixin MaxHeight($val) {
-  max-height: adaptive($val);
+// @mixin MaxHeight($val) {
+//   max-height: adaptive($val);
+// }
+
+@mixin MaxHeight($height) {
+  max-height: #{$height}px;
 }
 
 // ===== Margin =====

@@ -1,14 +1,14 @@
-@import '../fonts/etude-noire.css';
-@import './_reset';
-@import './_vars';
-@import './_fonts';
-@import './_mixins';
-@import './_common';
-@import '../components//header/header.scss';
-@import './_main';
+@use '../fonts/etude-noire.css';
+@use './_reset';
+@use './_vars';
+@use './_fonts';
+@use './_mixins';
+@use './_common';
+@use '../components//header/header.scss';
+@use './_main';
 
 
-@import '_media';
+@use '_media';
 
 :root {
   --etude-noire: 'Etude Noire', Arial, Helvetica, sans-serif;
