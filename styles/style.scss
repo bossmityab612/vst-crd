@@ -1,11 +1,11 @@
-@use '../fonts/etude-noire.css';
-@use './_reset';
-@use './_vars';
-@use './_fonts';
-@use './_mixins';
-@use './_common';
-@use '../components//header/header.scss';
-@use './_main';
+@use './fonts/etude-noire.css';
+@use '/_reset';
+@use '/_vars';
+@use '/_fonts';
+@use '/_mixins';
+@use '/_common';
+@use './components//header/header.scss';
+@use '/_main';
 
 
 @use '_media';
@@ -168,6 +168,7 @@ header p {
   @include fontSize(40);
 
   display: block;
+  border: 1px solid #000;
 }
 
 .description p:nth-child(even) {
