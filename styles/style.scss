@@ -204,7 +204,8 @@ footer p {
   }
 
   .projects ul {
-    @include MaxHeight(600);
+    @include MaxHeight(400);
+    border: 1px solid #ff0000;
   }
 
   .projects ul li h2 {
